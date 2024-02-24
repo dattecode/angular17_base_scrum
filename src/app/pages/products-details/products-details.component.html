@@ -1,0 +1,11 @@
+@if (loading) {
+<h3>Loading . . . .</h3>
+} @if (!loading) {
+
+<h2>buy out product {{ product?.title }}</h2>
+<div>
+  <p>{{ product?.description }}</p>
+  <img src="{{ product?.image }}" style="width: 20rem" />
+  <p>price: {{ product?.price }}</p>
+</div>
+}
